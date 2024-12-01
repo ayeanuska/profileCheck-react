@@ -4,7 +4,7 @@ const ProfileCard = ({ item }) => {
   const cardStyle = {
     width: "200px",
     height: "auto",
-    backgroundColor: "white",
+    backgroundColor: "grey",
     color: "black",
     marginTop: "10px",
     padding: "10px",

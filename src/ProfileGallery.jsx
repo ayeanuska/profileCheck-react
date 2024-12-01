@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCard from "./ProfileCard";
+import { ProfileViewer } from "./ProfileViewer";
 
 const users = [
   {
@@ -36,7 +37,7 @@ const users = [
 
 const galleryStyle = {
   display: "flex",
-  gap: "5px",
+  gap: "15px",
   width: "100vw",
   flexWrap: "wrap",
 };
@@ -45,13 +46,14 @@ const ProfileGallery = () => {
   return (
     <div>
       <h1> Profile Gallery </h1>
-      <div style={galleryStyle}></div>
 
-      {users.map((item, index) => (
-        <div>
+      <div style={galleryStyle}>
+        {users.map((item, index) => (
           <ProfileCard key={index} item={item} />
-        </div>
-      ))}
+        ))}{" "}
+      </div>
+
+      <ProfileViewer />
     </div>
   );
 };

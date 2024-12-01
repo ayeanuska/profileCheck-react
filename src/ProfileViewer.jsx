@@ -1,5 +1,10 @@
 import React from "react";
 
-export const profileViewer = () => {
-  return <div>profileViewer</div>;
-};
+const ProfileViewer = () => {
+  return(
+
+
+  <div>ProfileViewer</div>;
+ )};
+
+export default ProfileViewer;
