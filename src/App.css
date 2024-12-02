@@ -1,36 +1,75 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-.h1 {
-  justify-self: center;
+
+.gallery-style {
+  display: flex;
+  gap: 15px;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: rgb(167, 157, 139);
+
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .card-style {
-  width: 200px;
-  height: auto;
-  background-color: wheat;
+  background-color: rgb(167, 157, 139);
   color: black;
-  margin-top: 10px;
-  padding: 10px;
+  width: 400px;
+  height: auto;
   border-radius: 20px;
+
+  margin: 30px 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 .viewer-style {
+  background-color: rgba(167, 157, 139, 0.399);
+  color: black;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(101, 45, 45, 0.628);
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 0vh;
+
   position: absolute;
+  top: 150px;
 }
 
 .viewer-style > img {
   width: 50vh;
   height: 50vh;
   flex-direction: column;
+  border-radius: 10px;
+  background-color: rgb(13, 12, 10);
+}
+
+.userdata {
+  padding: 20px;
+  margin: 10px;
+  background-color: aliceblue;
+  width: 40vh;
+  height: aut0;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.viewer-style h2 {
+  padding: 20px;
+
+  background-color: aliceblue;
+  border-radius: 2px;
 }

@@ -10,6 +10,9 @@ const ProfileCard = ({ item, openSesame, updateProfile }) => {
       <img src={item.image} />
       <div>{item.name}</div>
       <div>{item.title}</div>
+      <div>{item.cellphone}</div>
+      <div>{item.address}</div>
+
       <button onClick={OpenProfileViewer}>View Profile</button>
     </div>
   );
