@@ -1,21 +1,16 @@
 import React from "react";
 
-const ProfileCard = ({ item }) => {
-  const cardStyle = {
-    width: "200px",
-    height: "auto",
-    backgroundColor: "grey",
-    color: "black",
-    marginTop: "10px",
-    padding: "10px",
-    borderRadius: "20px",
+const ProfileCard = ({ item, openSesame, updateProfile }) => {
+  const OpenProfileViewer = () => {
+    openSesame(true);
+    updateProfile(item);
   };
   return (
-    <div style={cardStyle}>
+    <div className="card-style">
       <img src={item.image} />
       <div>{item.name}</div>
-      <div>{item.tittle}</div>
-      <button>View Profile</button>
+      <div>{item.title}</div>
+      <button onClick={OpenProfileViewer}>View Profile</button>
     </div>
   );
 };
