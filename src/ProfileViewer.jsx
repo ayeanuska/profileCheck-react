@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProfileViewer = ({ userData, closeSesame }) => {
-  const Handleclose = () => {};
+  
   return (
     <div className="viewer-style">
       <img src={userData.image} />
